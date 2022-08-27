@@ -1,0 +1,19 @@
+{
+    "name": "asteria/academy",
+    "description": "A Tutorial and learning base wordpress plugin",
+    "type": "wordpress-plugin",
+    "license": "gplv3",
+    "autoload": {
+        "psr-4": {
+            "Asteria\\Academy\\": "includes/"
+        },
+        "files": []
+    },
+    "authors": [
+        {
+            "name": "abdullah"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

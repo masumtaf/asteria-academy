@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Frontend {
 
     public function __construct(){
-       
+   
         new Frontend\Shortcode();
     }
 

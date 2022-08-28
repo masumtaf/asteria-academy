@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class Shortcode{
 
-    public function __contstruct(){
+    public function __construct(){
     
         add_shortcode( 'ast-scode', [ $this, 'render_shortcode' ] );
     }

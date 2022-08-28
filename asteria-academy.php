@@ -8,6 +8,7 @@
  * Version: 1.0.0
  * License: GPL3 or later
  * License URI: https://www.gnu.org/licenses/quick-guide-gplv3.html
+ * Text Domain: asteria-academy
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -111,6 +112,7 @@ final class Asteria_Academy {
     public function init_plugin(){
 
         if ( is_admin() ) {
+            new Asteria\Academy\Admin();
 
         } else {
             new Asteria\Academy\Frontend();

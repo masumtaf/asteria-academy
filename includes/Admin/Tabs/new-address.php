@@ -1,6 +1,6 @@
 <div class="wrap">
     <h2 class="wp-heading-inline"><?php _e( 'New Address Book' , 'asteria-academy' );?></h2>
-
+    <?php var_dump($this->errors);?> 
     <form action="" method="post">
         <table class="form-tabel">
         <tbody>

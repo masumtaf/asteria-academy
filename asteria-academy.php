@@ -79,14 +79,8 @@ final class Asteria_Academy {
      * @return void
      */
     public function activated(){
-        $insalled = get_option( 'ast_ac_installed' );
-
-        if ( ! $insalled ) {
-            update_option( 'ast_ac_installed' , time() );
-        }
-
-        update_option( 'ast_ac_installed', AST_AC_VERSION );
-        
+        $installer = new Asteria\Academy\Installer ;
+        $installer->run();
     }
 
     public function test($test2){

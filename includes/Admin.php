@@ -9,15 +9,16 @@ class Admin {
 
     public function __construct(){
 
-        $this->dispatch_action();
+        $addressBook  = new Admin\AddressBook();
 
-        new Admin\Menu();
+        $this->dispatch_action( $addressBook );
+
+        new Admin\Menu( $addressBook );
         
     }
 
-    public function dispatch_action(){
-        $addressBook  = new Admin\AddressBook();
-
+    public function dispatch_action( $addressBook ){
+        
         add_action( 'admin_init', [ $addressBook, 'form_handler' ] );
     }
     
